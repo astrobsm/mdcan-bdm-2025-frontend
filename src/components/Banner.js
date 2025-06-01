@@ -15,8 +15,12 @@ const Banner = () => {
       {/* Logo */}
       <img src={logoUrl} alt="MDCAN Logo" style={{position:'absolute', top:24, left:24, width:80, height:80, borderRadius:'50%', boxShadow:'0 2px 12px #001f3f55', background:'#fff', objectFit:'contain', border:'3px solid #ffc107'}} />
       <div style={{position:'relative', zIndex:1, textAlign:'center', background:'rgba(40,167,69,0.7)', borderRadius:'1.2rem', padding:'1.5rem 0.5rem', boxShadow:'0 2px 16px #001f3f55'}}>
-        <h1 style={{fontWeight:900, fontSize:'2.7rem', fontFamily:'Montserrat, sans-serif', letterSpacing:1, marginBottom:8, textShadow:'0 2px 12px #001f3f55'}}>MDCAN 14th Biennial Delegates' Meeting and SCIENTIFIC Conference </h1>
-        <p style={{fontWeight:700, fontSize:'1.2rem', fontFamily:'Montserrat, sans-serif', marginBottom:24, textShadow:'0 2px 8px #001f3f55'}}><em>'Otanisi Psychosis': THE MENTAL HEALTH IMPLICATIONS OF THE DWINDLING SOCIO-ECONOMIC FORTUNES OF NIGERIANS</em></p>
+        <h1 style={{fontWeight:900, fontSize:'2.7rem', fontFamily:'Montserrat, sans-serif', letterSpacing:1, marginBottom:8, textShadow:'0 2px 12px #001f3f55'}}>
+          MDCAN 14th Biennial Delegates' Meeting and SCIENTIFIC Conference
+        </h1>
+        <p style={{fontWeight:700, fontSize:'1.2rem', fontFamily:'Montserrat, sans-serif', marginBottom:24, textShadow:'0 2px 8px #001f3f55'}}>
+          <em>‘Otanisi Psychosis’: THE MENTAL HEALTH IMPLICATIONS OF THE DWINDLING SOCIO-ECONOMIC FORTUNES OF NIGERIANS</em>
+        </p>
       </div>
     </div>
   );

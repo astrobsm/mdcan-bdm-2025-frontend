@@ -91,12 +91,13 @@ const Welcome = ({ onRegister, onAdmin }) => {
         <h2 style={{fontSize:'2.7rem', fontWeight:900, textShadow:'0 2px 16px #001f3f', letterSpacing:1, fontFamily:'Montserrat, sans-serif'}}>
           MDCAN 2024 Annual Conference
         </h2>
-        <p style={{fontSize:'1.3rem', fontWeight:700, margin:'18px 0 32px 0', textShadow:'0 2px 8px #001f3f88', fontFamily:'Montserrat, sans-serif'}}>
-          <em>SUB-THEMES:
- Medical Migration Syndrome (Japa): Fortunes and Misfortunes
-Physician heal thyself: The mismatch between knowledge and practice</em>
+        <h2 style={{fontSize:'2.2rem', fontWeight:900, textShadow:'0 2px 16px #001f3f', letterSpacing:1, fontFamily:'Montserrat, sans-serif'}}>
+          ‘Otanisi Psychosis’: THE MENTAL HEALTH IMPLICATIONS OF THE DWINDLING SOCIO-ECONOMIC FORTUNES OF NIGERIANS
+        </h2>
+        <p style={{fontSize:'1.1rem', fontWeight:700, margin:'18px 0 32px 0', textShadow:'0 2px 8px #001f3f88', fontFamily:'Montserrat, sans-serif'}}>
+          <em>Sub-themes:</em>
         </p>
-        <ul style={{fontSize:'1.2rem', marginBottom:32, fontWeight:700, color:'#ffc107', textShadow:'0 2px 8px #001f3f88', background:'rgba(0,31,63,0.7)', borderRadius:12, padding:'1.2rem 2rem', fontFamily:'Montserrat, sans-serif'}}>
+        <ul style={{fontSize:'1.1rem', marginBottom:32, fontWeight:700, color:'#ffc107', textShadow:'0 2px 8px #001f3f88', background:'rgba(0,31,63,0.7)', borderRadius:12, padding:'1.2rem 2rem', fontFamily:'Montserrat, sans-serif'}}>
           <li>Medical Migration Syndrome (Japa): Fortunes and Misfortunes</li>
           <li>Physician heal thyself: The mismatch between knowledge and practice</li>
         </ul>
