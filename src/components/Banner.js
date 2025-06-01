@@ -18,9 +18,24 @@ const Banner = () => {
         <h1 style={{fontWeight:900, fontSize:'2.7rem', fontFamily:'Montserrat, sans-serif', letterSpacing:1, marginBottom:8, textShadow:'0 2px 12px #001f3f55'}}>
           MDCAN 14th Biennial Delegates' Meeting and SCIENTIFIC Conference
         </h1>
-        <p style={{fontWeight:700, fontSize:'1.2rem', fontFamily:'Montserrat, sans-serif', marginBottom:24, textShadow:'0 2px 8px #001f3f55'}}>
+        <p style={{fontWeight:700, fontSize:'1.2rem', fontFamily:'Montserrat, sans-serif', marginBottom:12, textShadow:'0 2px 8px #001f3f55'}}>
           <em>‘Otanisi Psychosis’: THE MENTAL HEALTH IMPLICATIONS OF THE DWINDLING SOCIO-ECONOMIC FORTUNES OF NIGERIANS</em>
         </p>
+        <ul style={{
+          fontWeight:700,
+          fontSize:'1.05rem',
+          color:'#ffc107',
+          textShadow:'0 2px 8px #001f3f88',
+          background:'rgba(0,31,63,0.7)',
+          borderRadius:12,
+          padding:'0.8rem 1.5rem',
+          margin:'0 auto 0.5rem auto',
+          display:'inline-block',
+          fontFamily:'Montserrat, sans-serif'
+        }}>
+          <li>Medical Migration Syndrome (Japa): Fortunes and Misfortunes</li>
+          <li>Physician heal thyself: The mismatch between knowledge and practice</li>
+        </ul>
       </div>
     </div>
   );

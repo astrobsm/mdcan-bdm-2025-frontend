@@ -32,19 +32,20 @@ const Countdown = () => {
     return () => { document.head.removeChild(link); };
   }, []);
 
+  // Responsive styles
   const digitStyle = {
     fontFamily: "'Share Tech Mono', monospace",
     fontWeight: 900,
-    fontSize: '3.2rem',
+    fontSize: 'clamp(1.5rem, 7vw, 3.2rem)', // Responsive font size
     background: '#222',
     color: '#ffc107',
     borderRadius: '8px',
     padding: '0.2em 0.5em',
-    margin: '0 8px',
+    margin: '0 4px',
     boxShadow: '0 2px 12px #001f3f55',
     letterSpacing: '2px',
     display: 'inline-block',
-    minWidth: '2.5em',
+    minWidth: '2.2em',
     textAlign: 'center',
   };
 
@@ -55,9 +56,10 @@ const Countdown = () => {
         style={{
           fontFamily: "'Share Tech Mono', monospace",
           fontWeight: 900,
-          fontSize: '2.6rem',
+          fontSize: 'clamp(1.2rem, 6vw, 2.6rem)',
           color: '#ffc107',
           textShadow: '0 2px 8px #001f3f55',
+          textAlign: 'center',
         }}
       >
         Conference Started!
@@ -71,24 +73,28 @@ const Countdown = () => {
       style={{
         fontFamily: "'Share Tech Mono', monospace",
         fontWeight: 900,
-        fontSize: '2.6rem',
+        fontSize: 'clamp(1.2rem, 6vw, 2.6rem)', // Responsive font size
         letterSpacing: '2px',
         color: '#ffc107',
         textShadow: '0 2px 8px #001f3f55',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '0.5em',
+        gap: '0.3em',
+        flexWrap: 'wrap',
+        width: '100%',
+        maxWidth: 600,
+        margin: '0 auto',
       }}
     >
       <span style={digitStyle}>{String(time.d).padStart(2, '0')}</span>
-      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>d</span>
+      <span style={{ fontSize: 'clamp(1rem, 4vw, 2rem)', color: '#fff', margin: '0 2px' }}>d</span>
       <span style={digitStyle}>{String(time.h).padStart(2, '0')}</span>
-      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>h</span>
+      <span style={{ fontSize: 'clamp(1rem, 4vw, 2rem)', color: '#fff', margin: '0 2px' }}>h</span>
       <span style={digitStyle}>{String(time.m).padStart(2, '0')}</span>
-      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>m</span>
+      <span style={{ fontSize: 'clamp(1rem, 4vw, 2rem)', color: '#fff', margin: '0 2px' }}>m</span>
       <span style={digitStyle}>{String(time.s).padStart(2, '0')}</span>
-      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>s</span>
+      <span style={{ fontSize: 'clamp(1rem, 4vw, 2rem)', color: '#fff', margin: '0 2px' }}>s</span>
     </div>
   );
 };
