@@ -53,7 +53,9 @@ const Welcome = ({ onRegister, onAdmin }) => {
         <Countdown />
         <h2 style={{fontSize:'2.7rem', fontWeight:900, textShadow:'0 2px 16px #001f3f', letterSpacing:1, fontFamily:'Montserrat, sans-serif'}}></h2>
         <p style={{fontSize:'1.3rem', fontWeight:700, margin:'18px 0 32px 0', textShadow:'0 2px 8px #001f3f88', fontFamily:'Montserrat, sans-serif'}}>
-          <em></em>
+          <em>SUB-THEMES:
+ Medical Migration Syndrome (Japa): Fortunes and Misfortunes
+Physician heal thyself: The mismatch between knowledge and practice</em>
         </p>
         <ul style={{fontSize:'1.2rem', marginBottom:32, fontWeight:700, color:'#ffc107', textShadow:'0 2px 8px #001f3f88', display:'inline-block', background:'rgba(0,31,63,0.7)', borderRadius:12, padding:'1.2rem 2rem', fontFamily:'Montserrat, sans-serif'}}>
           <li></li>
