@@ -26,19 +26,69 @@ const Countdown = () => {
   // Google Fonts for digital style
   useEffect(() => {
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@700&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     return () => { document.head.removeChild(link); };
   }, []);
 
-  if (time.expired) return <div className="countdown" style={{fontFamily:'Share Tech Mono, monospace', fontWeight:700, fontSize:'2.2rem'}}>Conference Started!</div>;
+  const digitStyle = {
+    fontFamily: "'Share Tech Mono', monospace",
+    fontWeight: 900,
+    fontSize: '3.2rem',
+    background: '#222',
+    color: '#ffc107',
+    borderRadius: '8px',
+    padding: '0.2em 0.5em',
+    margin: '0 8px',
+    boxShadow: '0 2px 12px #001f3f55',
+    letterSpacing: '2px',
+    display: 'inline-block',
+    minWidth: '2.5em',
+    textAlign: 'center',
+  };
+
+  if (time.expired) {
+    return (
+      <div
+        className="countdown"
+        style={{
+          fontFamily: "'Share Tech Mono', monospace",
+          fontWeight: 900,
+          fontSize: '2.6rem',
+          color: '#ffc107',
+          textShadow: '0 2px 8px #001f3f55',
+        }}
+      >
+        Conference Started!
+      </div>
+    );
+  }
+
   return (
-    <div className="countdown" style={{fontFamily:'Share Tech Mono, monospace', fontWeight:700, fontSize:'2.2rem', letterSpacing:'2px', color:'#ffc107', textShadow:'0 2px 8px #001f3f55'}}>
-      <span style={{fontSize:'2.6rem'}}>{String(time.d).padStart(2,'0')}</span>d
-      <span style={{fontSize:'2.6rem', marginLeft:12}}>{String(time.h).padStart(2,'0')}</span>h
-      <span style={{fontSize:'2.6rem', marginLeft:12}}>{String(time.m).padStart(2,'0')}</span>m
-      <span style={{fontSize:'2.6rem', marginLeft:12}}>{String(time.s).padStart(2,'0')}</span>s
+    <div
+      className="countdown"
+      style={{
+        fontFamily: "'Share Tech Mono', monospace",
+        fontWeight: 900,
+        fontSize: '2.6rem',
+        letterSpacing: '2px',
+        color: '#ffc107',
+        textShadow: '0 2px 8px #001f3f55',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '0.5em',
+      }}
+    >
+      <span style={digitStyle}>{String(time.d).padStart(2, '0')}</span>
+      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>d</span>
+      <span style={digitStyle}>{String(time.h).padStart(2, '0')}</span>
+      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>h</span>
+      <span style={digitStyle}>{String(time.m).padStart(2, '0')}</span>
+      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>m</span>
+      <span style={digitStyle}>{String(time.s).padStart(2, '0')}</span>
+      <span style={{ fontSize: '2rem', color: '#fff', margin: '0 2px' }}>s</span>
     </div>
   );
 };
